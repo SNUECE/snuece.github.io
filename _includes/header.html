@@ -2,6 +2,11 @@
 <header id="header"{% if page.layout == 'landing' %} class="alt"{% endif %}>
   <content-security-policy policy-directives="script-src 'self' https://snuece.github.io; object-src https://snuece.github.io; report-uri /csp-report-endpoint/" />
   <xss-protection block="false"/>
+  
+  <headers defaults-disable="true">
+      <cache-control />
+      <content-type-options />
+  </headers>
 
   <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
   <nav id="nav">
