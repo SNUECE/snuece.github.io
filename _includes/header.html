@@ -1,6 +1,7 @@
 <!-- Header -->
 <header id="header"{% if page.layout == 'landing' %} class="alt"{% endif %}>
-  <content-security-policy policy-directives="script-src 'self' https://wscan.snu.ac.kr; object-src https://wscan.snu.ac.kr; report-uri /csp-report-endpoint/" />
+  <content-security-policy policy-directives="script-src 'self' https://snuece.github.io; object-src https://snuece.github.io; report-uri /csp-report-endpoint/" />
+  <xss-protection block="false"/>
 
   <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
   <nav id="nav">
